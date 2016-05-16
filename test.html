@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:text-align="http://www.w3.org/1999/xhtml"
+      xmlns:font-weight="http://www.w3.org/1999/xhtml"
+      xmlns:background="http://www.w3.org/1999/xhtml" xmlns:padding="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Android GeoWebOne Demo</title>
+    <script language="javascript">
+
+  function c(){
+     document.getElementById("num").innerHTML=message.clear();
+     }
+
+     function num1(){
+     message.numSetting("1");
+     document.getElementById("num").innerHTML=message.giveBackNum();
+     }
+
+     function num2(){
+     message.numSetting("2");
+     document.getElementById("num").innerHTML=message.giveBackNum();
+     }
+  function num3(){
+     message.numSetting("3");
+     document.getElementById("num").innerHTML=message.giveBackNum();
+     }
+     function num4(){
+     message.numSetting("4");
+     document.getElementById("num").innerHTML=message.giveBackNum();
+     }
+     function num5(){
+     message.numSetting("5");
+     document.getElementById("num").innerHTML=message.giveBackNum();
+     }
+function num6(){
+     message.numSetting("6");
+     document.getElementById("num").innerHTML=message.giveBackNum();
+     }
+       function num7(){
+     message.numSetting("7");
+     document.getElementById("num").innerHTML=message.giveBackNum();
+     }
+    function num8(){
+     message.numSetting("8");
+     document.getElementById("num").innerHTML=message.giveBackNum();
+     }
+ function num9(){
+     message.numSetting("9");
+     document.getElementById("num").innerHTML=message.giveBackNum();
+     }
+  function num11(){
+     message.numSetting("*");
+     document.getElementById("num").innerHTML=message.giveBackNum();
+     }
+     function num0(){
+     message.numSetting("0");
+     document.getElementById("num").innerHTML=message.giveBackNum();
+     }
+     function num00(){
+     message.numSetting("#");
+     document.getElementById("num").innerHTML=message.giveBackNum();
+     }
+
+function toJava() {
+message.getText(document.getElementById("myText").value);
+document.getElementById("num").innerHTML="";
+document.getElementById("myText").innerHTML="";
+}
+
+</script>
+
+</head>
+
+<body>
+
+<table border="8" bordercolor="#87cefa"  cellspacing="10" cellpadding="0" align="center">
+    <tr>
+        <td><input type="button" onclick="num1()" style="WIDTH: 50pt; HEIGHT: 50pt"
+                   value="1"></td>
+        <td><input type="button" onclick="num2()" style="WIDTH: 50pt; HEIGHT: 50pt"
+                   value="2"></td>
+        <td><input type="button" onclick="num3()" style="WIDTH: 50pt; HEIGHT: 50pt"
+                   value="3"></td>
+    </tr>
+
+    <tr>
+        <td><input type="button" onclick="num4()" style="WIDTH: 50pt; HEIGHT: 50pt"
+                    value="4"></td>
+        <td><input type="button" onclick="num5()" style="WIDTH: 50pt; HEIGHT: 50pt"
+                   value="5"></td>
+        <td><input type="button" onclick="num6()" style="WIDTH: 50pt; HEIGHT: 50pt"
+                   value="6"></td>
+    </tr>
+
+    <tr>
+        <td><input type="button" onclick="num7()" style="WIDTH: 50pt; HEIGHT: 50pt"
+                   value="7"></td>
+        <td><input type="button" onclick="num8()" style="WIDTH: 50pt; HEIGHT: 50pt"
+                   value="8"></td>
+        <td><input type="button" onclick="num9()" style="WIDTH: 50pt; HEIGHT: 50pt"
+                   value="9"></td>
+    </tr>
+
+    <tr>
+        <td><input type="button" onclick="num11()" style="WIDTH: 50pt; HEIGHT: 50pt"
+                   value="*"></td>
+        <td><input type="button" onclick="num0()" style="WIDTH: 50pt; HEIGHT: 50pt"
+                   value="0"></td>
+        <td><input type="button" onclick="num00()" style="WIDTH: 50pt; HEIGHT: 50pt"
+                   value="#"></td>
+    </tr>
+
+</table>
+<p></p>
+
+<table  border="2" bordercolor="#ff00ff">
+    <tr>
+        <td> Mobile Number </td>
+        <td width="150px"> <span id="num"> </span></td>
+    </tr>
+</table>
+<input type="button"  style=" HEIGHT: 20pt"
+       onclick="c()"
+       value="Clear Numbers">
+<p> </p>
+<p> </p>
+<a>Text Message </a>
+<input type="text" id="myText"  style="WIDTH: 190pt; HEIGHT: 50pt"/>
+
+<input type="button"  style="WIDTH: 50pt; HEIGHT: 50pt"
+       onclick= "toJava()"
+       value="submit">
+</body>
+</html>
